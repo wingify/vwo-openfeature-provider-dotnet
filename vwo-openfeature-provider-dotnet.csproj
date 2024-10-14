@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Main Project Settings -->
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VWOOpenFeatureProvider</RootNamespace>
+    <AssemblyName>VWOOpenFeatureProvider</AssemblyName>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageId>VWO.OpenFeature.Provider</PackageId>
+    <Version>1.0.0</Version>
+    <Description>VWO OpenFeature Provider for .NET, allowing feature management with OpenFeature SDK.</Description>
+    <Authors>VWO devs</Authors>
+    <Company>Wingify</Company>
+    <Product>VWO OpenFeature Provider</Product>
+    <Copyright>Copyright © Wingify 2024-2025</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- OpenFeature SDK -->
+    <PackageReference Include="OpenFeature" Version="2.0.0" />
+
+    <!-- VWO SDK -->
+    <PackageReference Include="VWO.FME.Sdk" Version="*" />
+
+    <!-- JSON Serialization -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+
+  </ItemGroup>
+
+</Project>
